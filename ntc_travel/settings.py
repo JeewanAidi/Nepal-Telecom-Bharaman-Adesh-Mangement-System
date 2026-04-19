@@ -56,8 +56,12 @@ WSGI_APPLICATION = 'ntc_travel.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('ntc-travel-db'),
+        'USER': os.environ.get('ntc_admin'),
+        'PASSWORD': os.environ.get('f9RLzRA9CdUWfxn2ZR9o1n4yzdxn5XVw'),
+        'HOST': os.environ.get('dpg-d7ii9ougvqtc73999f00-a'),
+        'PORT': os.environ.get('5432'),
     }
 }
 
