@@ -12,10 +12,16 @@ SECRET_KEY = 'django-insecure-ntc-mahendranagar-travel-management-2024-secret-ke
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["nepal-telecom-bharaman-adesh-mangement.onrender.com"]
 
 INSTALLED_APPS = [
-    "nepal-telecom-bharaman-adesh-mangement.onrender.com"
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'travel_management',
 ]
 
 MIDDLEWARE = [
